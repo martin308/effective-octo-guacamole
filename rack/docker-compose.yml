@@ -2,7 +2,10 @@ version: "3"
 services:
   ruby:
     build: .
+    command: ruby app.rb
     ports:
-      - "8080:80"
+      - "8080:8080"
     volumes:
       - ".:/app"
+    environment:
+      - RACK_ENV=production
