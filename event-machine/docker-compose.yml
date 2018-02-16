@@ -2,7 +2,8 @@ version: "3"
 services:
   ruby:
     build: .
+    command: ruby app.rb
     ports:
-      - "8080:80"
+      - "10000:10000"
     volumes:
       - ".:/app"

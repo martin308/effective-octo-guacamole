@@ -1,12 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bugsnag (6.6.4)
+      concurrent-ruby (~> 1.0)
+    bugsnag-em (0.1)
+      bugsnag
+      eventmachine
+      lspace (>= 0.13)
+    concurrent-ruby (1.0.5)
     eventmachine (1.2.5)
+    lspace (0.14)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bugsnag-em
   eventmachine
 
 BUNDLED WITH
